@@ -47,7 +47,7 @@ window.collectHomework = function () {
         ? 'Incorrecta'
         : answer
           ? 'Sin comprobar'
-          : 'Sin responder';
+          : '';
 
     items.push({ label, answer, result, score });
   }
@@ -85,7 +85,7 @@ window.collectHomework = function () {
     items.push({
       label: `Conversación ${i + 1}: ${question[0]}`,
       answer,
-      result: answer ? 'Para revisar' : 'Sin responder',
+      result: answer ? 'Para revisar' : '',
       score: null
     });
   });
